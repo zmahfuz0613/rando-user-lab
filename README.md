@@ -8,12 +8,12 @@ In this exercise, you will build a react app that fetches a random user from an 
 - Clear out the boilerplate and add a header to the app component with a nice title for our random user app
 
 ## Fetch a User
-- Add a button to the App component that when clicked calls a function `fetchUser`.  This will entail the following steps:
-	- Write a method `fetchUser` in the App component
+- Add a button to the App component that when clicked calls a function `refreshUser`.  This will entail the following steps:
+	- Write a method `refreshUser` in the App component
 	- don't forget to `bind` it in the constructor
 	- pass `fetchUser` to the `onClick` prop on the button
 	- For now, just `console.log` a message inside fetchUser to make sure it works
-- After verifying that the `fetchUser` button calls the `fetchUser` method (using a console.log statement), add a `services` directory
+- After verifying that the `refreshUser` button calls the `refreshUser` method (using a console.log statement), add a `services` directory
 - Inside `services/` add a `rando_user.js` file
 - Inside `rando_user.js` import axios, set a base url to "https://api.randomuser.me/"
 - Also inside `rando_user.js` write an async function `fetchUser` that fetches a random user using the above url and returns the response
