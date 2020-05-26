@@ -15,7 +15,7 @@ When the App component loads, make a request to `https://api.randomuser.me/` to 
 
 ## Display Some User Data
 
-- Add a `components` directory, and inside `components`, add a `UserSummary` component.  Make it a class component
+- Add a `UserSummary` component.  Make it a class component
 - `UserSummary` should take a single prop, `userData`.  Import it and use it inside the App component.  Pass `this.state.currentUser` to `UserSummary` as a `userData` prop, i.e., `<UserSummary userData={this.state.currentUser} />`
 - Inside the `UserSummary` component, if the `userData` prop is null, render a message saying "there is no user data"
 - *else* if UserData is not null, render the user's name, and email
